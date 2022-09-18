@@ -1,0 +1,168 @@
+.hero__button {
+    color: var(--pure-white);
+    background-color: var(--bg-color-button);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 10px 32px;
+    margin: 0 auto;
+
+    cursor: pointer;
+
+    transition: background-color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    }
+}
+
+/* Кнопки портфолио */
+
+.port-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.port-buttons .port-buttons__list + .port-buttons__list {
+    margin-left: 8px;
+}
+
+.port-buttons__button {
+    color: var(--main-text-color);
+    background-color: #F5F4FA;
+    border: none;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    border-radius: var(--border-radius);
+    padding: 6px 22px;
+
+    cursor: pointer;
+
+    transition: color 250ms var(--timing-function),
+                background-color 250ms var(--timing-function),
+                border-color 250ms var(--timing-function),
+                box-shadow 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: #FFFFFF;
+        background-color: var(--bg-color-button);
+        border-color: var(--bg-color-button);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+                    0px 1px 2px rgba(0, 0, 0, 0.08), 
+                    0px 2px 2px rgba(0, 0, 0, 0.12);
+        
+    }
+}
+
+/* Кнопки подвала */
+
+.footer__button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    border: none;
+    border-radius: var(--border-radius);
+    margin-left: 12px;
+    padding: 10px 28px;
+
+    cursor: pointer;
+
+    color: var(--pure-white);
+    background-color: var(--bg-color-button);
+
+    transition: background-color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    }
+}
+
+.footer__button--icon-ml {
+    margin-left: 10px;
+}
+
+/* Модальные кнопки */
+.modal__button-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+    padding: 0;
+
+    background-color: var(--pure-white);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+
+    transition: fill 250ms var(--timing-function);
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        fill: var(--link-color);
+    }
+}
+
+
+
+.modal__button {
+    color: var(--pure-white);
+    background-color: var(--bg-color-button);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    border: none;
+    border-radius: var(--border-radius);
+    margin: 0 auto;
+    padding: 10px 52px;
+
+    cursor: pointer;
+
+    transition: background-color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: var(--border-radius);
+    }
+}
+

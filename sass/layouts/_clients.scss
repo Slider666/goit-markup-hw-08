@@ -1,0 +1,32 @@
+.clients {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+
+    transition: border 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--link-color)
+    }
+}
+
+.clients__icon {
+    fill: var(--icon-color);
+
+    transition: fill 250ms var(--timing-function);
+
+    .clients__link:hover > &,
+    .clients__link:focus > & {
+        fill: var(--link-color);
+    }
+}
