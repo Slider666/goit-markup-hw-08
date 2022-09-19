@@ -1,26 +1,39 @@
 .header {
     border-bottom: 1px solid #ECECEC;
+
+    @media screen and (max-width: 767px) {
+        padding: 10px 0;
+    }
 }
 
-.header__helmet, .nav, .nav__list, .contacts {
+.header__helmet, .nav, .nav__list {
     display: flex;
     align-items: center;
 }
 
-.nav__list .nav__item,
-.contacts .contacts__link {
+.nav__list {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-left: 88px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 92px;
+    }
+    
+    & .nav__link--active {
+        color: var(--link-color);
+    }
+}
+
+.nav__item {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-}
-
-.nav__list {
-    margin-left: 93px;
-
-    & .nav__link--active {
-        color: var(--link-color);
-    }
 }
 
 .nav__link {
@@ -81,10 +94,52 @@
 
 .contacts {
     margin-left: auto;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.contacts__link {
+    @media screen and (min-width: 768px) {
+        font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+    }
+}
+
+.contacts__item + .contacts__item {
+    margin-top: 10px;
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 0;
+    }
 }
 
 .contacts .contacts__item + .contacts__item {
-    margin-left: 50px;
+    @media screen and (min-width: 1200px) {
+        margin-left: 50px;
+    }
 }
 
 .contacts__link {
@@ -102,11 +157,29 @@
 }
 
 .contacts__icon {
-    margin-right: 10px;
+    margin-right: 8px;
     fill: var(--primary-text-color);
 
     .contacts__link:hover > &,
     .contacts__link:focus > & {
         fill: var(--link-color);
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 10px;
+    }
+}
+
+.contacts__icon--mail {
+    @media screen and (max-width: 1199px) {
+        width: 14px;
+        height: 10px;
+    }
+}
+
+.contacts__icon--phone {
+    @media screen and (max-width: 1199px) {
+        width: 10px;
+        height: 14px;
     }
 }

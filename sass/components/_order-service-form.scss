@@ -3,11 +3,15 @@
 
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
 
     color: var(--main-text-color);
+
+    @media screen and (min-width: 1200px) {
+        line-height: 1.15;
+    }
 }
 
 .modal__form {
@@ -22,7 +26,8 @@
     }
     
     & input:hover,
-    & input:focus {
+    & input:focus,
+    & input:active {
         border-color: var(--link-color);
         outline: 0;
     }
@@ -66,7 +71,8 @@
     height: 40px;
 
     &:hover + .modal__icon,
-    &:focus + .modal__icon {
+    &:focus + .modal__icon,
+    &:active + .modal__icon {
         fill: var(--link-color);
     }
 }
@@ -83,7 +89,8 @@
     transition: border-color 250ms var(--timing-function);
 
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
         border: 1px solid var(--link-color);
         outline: 0;
     }
@@ -94,11 +101,16 @@
     justify-content: center;
 
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
 
     margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .modal__license-label {

@@ -1,3 +1,23 @@
+.button-mobile {
+    margin-left: auto;
+    padding: 0;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    border: none;
+    fill: #000;
+    background-color: var(--pure-white);
+
+    transition: fill 250ms var(--timing-function);
+
+    &:active {
+        fill: var(--bg-color-button);
+    }
+}
+
+/* Герой */
 .hero__button {
     color: var(--pure-white);
     background-color: var(--bg-color-button);
@@ -20,11 +40,13 @@
     transition: background-color 250ms var(--timing-function);
 
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
         background-color: #188CE8;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
     }
+
 }
 
 /* Кнопки портфолио */
@@ -32,11 +54,35 @@
 .port-buttons {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 480px) {
+        flex-wrap: wrap;
+        justify-content:left;
+
+        width: 326px;
+        height: 91px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
 }
 
 .port-buttons .port-buttons__list + .port-buttons__list {
     margin-left: 8px;
+
+    @media screen and (max-width: 480px) {
+        margin-bottom: 15px;
+
+        &:nth-child(4n) {
+            margin-left: 0;
+        }
+    }
 }
 
 .port-buttons__button {
@@ -61,7 +107,8 @@
                 box-shadow 250ms var(--timing-function);
 
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
         color: #FFFFFF;
         background-color: var(--bg-color-button);
         border-color: var(--bg-color-button);
@@ -75,9 +122,12 @@
 /* Кнопки подвала */
 
 .footer__button {
+    margin: 0 auto;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
+    
     display: flex;
     align-items: center;
     text-align: center;
@@ -85,7 +135,7 @@
 
     border: none;
     border-radius: var(--border-radius);
-    margin-left: 12px;
+    
     padding: 10px 28px;
 
     cursor: pointer;
@@ -96,10 +146,15 @@
     transition: background-color 250ms var(--timing-function);
 
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
         background-color: #188CE8;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
     }
 }
 
@@ -108,6 +163,8 @@
 }
 
 /* Модальные кнопки */
+
+/* Кнопки героя */
 .modal__button-close {
     position: absolute;
     top: 8px;
@@ -135,8 +192,6 @@
     }
 }
 
-
-
 .modal__button {
     color: var(--pure-white);
     background-color: var(--bg-color-button);
@@ -159,10 +214,37 @@
     transition: background-color 250ms var(--timing-function);
 
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
         background-color: #188CE8;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: var(--border-radius);
     }
 }
 
+/* Мобилка */
+.mobile__button-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+    padding: 0;
+
+    background-color: var(--pure-white);
+    border: none;
+    border-radius: 50px;
+
+    transition: fill 250ms var(--timing-function);
+
+    cursor: pointer;
+
+    &:active {
+        fill: var(--link-color);
+    }
+}

@@ -1,7 +1,15 @@
 .socials {
     display: flex;
     justify-content: space-between;
-    margin: 0 32px;
+    margin: 0 122px;
+
+    @media screen and (min-width: 768px) {
+        margin: 0 74px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin: 0 32px;
+    }
 }
 
 .socials__link {
