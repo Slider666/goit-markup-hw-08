@@ -183,12 +183,18 @@
 
         <section class="section section--pt">
             <div class="container">
+
                 <div class="bussines-mobile">
+
                     <h2 class="section__title">Чим ми займаємося</h2>
+
                     <ul class="bussines">
+
                         <li>
                             <div class="bussines__father">
-                                <img src="./images/box_1.png" 
+                                <img 
+                                srcset="./images/bussines/bussines-01.jpg 1x, ./images/bussines/bussines-01@2x.jpg 2x"
+                                src="./images/bussines-01.jpg" 
                                 alt="людина за роботою" 
                                 width="370">
                                     <div class="bussines__son">
@@ -196,20 +202,25 @@
                                     </div>
                             </div>                                           
                         </li>
+
                         <li>
                             <div class="bussines__father">
-                                <img src="./images/box_2.png" 
+                                <img 
+                                srcset="./images/bussines/bussines-02.jpg 1x, ./images/bussines/bussines-02@2x.jpg 2x"
+                                src="./images/bussines-02.jpg" 
                                 alt="людина, ноутбук та смартфон"
                                 width="370">
                                     <div class="bussines__son">
                                         <h3 class="bussines__title">Мобільні додатки</h3>                                
                                     </div>
-                            </div>                           
-                            
+                            </div>                                                  
                         </li>
+
                         <li>
                             <div class="bussines__father">
-                                <img src="./images/box_3.png" 
+                                <img 
+                                srcset="./images/bussines/bussines-03.jpg 1x, ./images/bussines/bussines-03@2x.jpg 2x"
+                                src="./images/bussines-03.jpg" 
                                 alt="людина та планшет з палітрою" 
                                 width="370">
                                     <div class="bussines__son">
@@ -219,7 +230,6 @@
                         </li>
                     </ul>
                 </div>
-
             </div>
         </section>
 
@@ -230,7 +240,21 @@
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="our-team">
                     <li class="our-team__item">
-                        <img src="./images/01_igor.jpg" alt="Ігор Дем'яненко" width="270">
+                        <img 
+                        srcset="
+                        ./images/team/team-1-des_270.jpg 270w,
+                        ./images/team/team-1-tab_354.jpg 354w,
+                        ./images/team/team-1-mob_450.jpg 450w,
+                        ./images/team/team-1-des_540.jpg 540w,
+                        ./images/team/team-1-tab_708.jpg 708w,
+                        ./images/team/team-1-mob_900.jpg 900w
+                        "
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./images/team/team-1-mob_450.jpg" 
+                        alt="Ігор Дем'яненко"
+                        width="450"
+                        height="460"
+                        loading="lazy">
                         <div class="our-team__wadding">
                             <h3 class="our-team__title">Ігор Дем'яненко</h3>
                             <p class="our-team__text" lang="en">Product Designer</p>
@@ -267,7 +291,21 @@
                         </div>
                     </li>
                     <li class="our-team__item">
-                        <img src="./images/02_olga.jpg" alt="Ольга Рєпіна" width="270">
+                        <img
+                        srcset="
+                        ./images/team/team-2-des_270.jpg 270w,
+                        ./images/team/team-2-tab_354.jpg 354w,
+                        ./images/team/team-2-mob_450.jpg 450w,
+                        ./images/team/team-2-des_540.jpg 540w,
+                        ./images/team/team-2-tab_708.jpg 708w,
+                        ./images/team/team-2-mob_900.jpg 900w
+                        "
+                        sizes=" (min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw " 
+                        src="./images/team/team-2-mob_450.jpg" 
+                        alt="Ольга Рєпіна"
+                        width="450"
+                        height="460"
+                        loading="lazy">
                         <div class="our-team__wadding">
                             <h3 class="our-team__title">Ольга Рєпіна</h3>
                             <p class="our-team__text" lang="en">Frontend Developer</p>
@@ -304,7 +342,21 @@
                         </div>
                     </li>
                     <li class="our-team__item">
-                        <img src="./images/03_mykola.jpg" alt="Микола Тарасов" width="270">
+                        <img
+                        srcset="
+                        ./images/team/team-3-des_270.jpg 270w,
+                        ./images/team/team-3-tab_354.jpg 354w,
+                        ./images/team/team-3-mob_450.jpg 450w,
+                        ./images/team/team-3-des_540.jpg 540w,
+                        ./images/team/team-3-tab_708.jpg 708w,
+                        ./images/team/team-3-mob_900.jpg 900w
+                        "
+                        sizes=" (min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw " 
+                        src="./images/team/team-3-mob_450.jpg" 
+                        alt="Микола Тарасов"
+                        width="450"
+                        height="460"
+                        loading="lazy">
                         <div class="our-team__wadding">
                             <h3 class="our-team__title">Микола Тарасов</h3>
                             <p class="our-team__text" lang="en">Marketing</p>
@@ -341,7 +393,21 @@
                         </div>
                     </li>
                     <li class="our-team__item">
-                        <img src="./images/04_myhailo.jpg" alt="Михайло Єрмаков" width="270">
+                        <img
+                        srcset="
+                        ./images/team/team-4-des_270.jpg 270w,
+                        ./images/team/team-4-tab_354.jpg 354w,
+                        ./images/team/team-4-mob_450.jpg 450w,
+                        ./images/team/team-4-des_540.jpg 540w,
+                        ./images/team/team-4-tab_708.jpg 708w,
+                        ./images/team/team-4-mob_900.jpg 900w
+                        "
+                        sizes=" (min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw " 
+                        src="./images/team/team-4-mob_450.jpg" 
+                        alt="Михайло Єрмаков"
+                        width="450"
+                        height="460"
+                        loading="lazy">
                         <div class="our-team__wadding">
                             <h3 class="our-team__title">Михайло Єрмаков</h3>
                             <p class="our-team__text" lang="en">UI Designer</p>

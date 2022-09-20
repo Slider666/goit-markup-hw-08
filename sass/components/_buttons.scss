@@ -53,11 +53,11 @@
 
 .port-buttons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 40px;
 
-    @media screen and (max-width: 480px) {
-        flex-wrap: wrap;
+    @media screen and (max-width: 768px) {
         justify-content:left;
 
         width: 326px;
@@ -76,7 +76,7 @@
 .port-buttons .port-buttons__list + .port-buttons__list {
     margin-left: 8px;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
         margin-bottom: 15px;
 
         &:nth-child(4n) {
