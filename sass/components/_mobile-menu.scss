@@ -52,11 +52,15 @@
 
 .mobile-contacts__phone {
     font-weight: 500;
-    font-size: 34px;
+    font-size: 24px;
     line-height: 1.18;
     letter-spacing: 0.02em;
 
     color: var(--bg-color-button);
+
+    @media screen and (min-width: 480px) {
+        font-size: 34px;
+    }
 }
 
 .mobile-contacts__mail {
@@ -70,11 +74,13 @@
 
 .mobile-socials {
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .mobile-socials__item {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
-    padding: 0 10px;
+    padding-right: 10px;
 
     &:first-child {
         padding-left: 0;

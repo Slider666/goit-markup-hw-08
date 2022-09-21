@@ -23,7 +23,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
     min-height: 609px;
     padding: 40px;
 
@@ -32,7 +33,7 @@
     border-radius: var(--border-radius);
 
     @media screen and (min-width: 1200px) {
-        width: 528px;
+        max-width: 528px;
         min-height: 581px;
     }
 }

@@ -160,6 +160,8 @@
     margin-right: 8px;
     fill: var(--primary-text-color);
 
+    transition: transform 250ms var( --timing-function);
+
     .contacts__link:hover > &,
     .contacts__link:focus > & {
         fill: var(--link-color);
